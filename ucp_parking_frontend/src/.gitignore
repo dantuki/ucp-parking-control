@@ -1,0 +1,11 @@
+# PlatformIO (Hardware)
+.pio/
+.clang_complete
+.gcc-flags.json
+
+# Node / React (Frontend y Backend)
+node_modules/
+.env
+dist/
+build/
+.DS_Store
