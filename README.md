@@ -1,4 +1,3 @@
-<div align="center">
 
   # 🚗 UCP Parking Control
   ### Sistema IoT & Web de Control y Gestión Automatizada de Parqueaderos
@@ -59,3 +58,25 @@
    ┌──────────────────────┐
    │   Frontend Web App   │ ◄─── React.js (Dashboard & Control)
    └──────────────────────┘
+🛠️ Stack TecnológicoCapaTecnologíaDescripciónFrontendReact.jsInterfaz reactiva, modular e intuitivaBackendNode.js & Express.jsAPI RESTful sólida para procesamiento de eventosHardware / IoTSensores FísicosDetección de ocupación por celdaControl de VersionesGit & GitHubFlujo de trabajo colaborativo y modular📁 Estructura del ProyectoBashucp-parking-control/
+├── client/                 # Aplicación Frontend (React.js)
+│   ├── src/
+│   │   ├── components/     # Componentes de interfaz reutilizables
+│   │   ├── pages/          # Vistas (Dashboard, Entradas, Métricas)
+│   │   └── services/       # Conexión con la API REST
+│   └── package.json
+├── server/                 # API Backend (Node.js + Express)
+│   ├── config/             # Variables de entorno y DB
+│   ├── controllers/        # Lógica de negocio y tarifación
+│   ├── routes/             # Endpoints REST
+│   └── package.json
+└── README.md
+⚡ Instalación y ConfiguraciónPrerrequisitosNode.js >= 18.0.0npm o yarnDispositivos o simuladores IoT configurados para envío de eventos HTTP/Socket1. Clonar el repositorioBashgit clone [https://github.com/dantuki/ucp-parking-control.git](https://github.com/dantuki/ucp-parking-control.git)
+cd ucp-parking-control
+2. Configurar el BackendBashcd server
+npm install
+npm run dev
+3. Configurar el FrontendEn una nueva terminal:Bashcd client
+npm install
+npm start
+🔌 Endpoints de la API (Resumen)MétodoEndpointDescripciónGET/api/parking/statusObtiene el estado y ocupación general de las celdasPOST/api/parking/entryRegistra el ingreso de un nuevo vehículoPOST/api/parking/exitRegistra salida y retorna tarifa calculadaGET/api/analytics/metricsObtiene indicadores clave para el dashboard👨‍💻 AutorDesarrollado por Daniel Bedoya López (@dantuki)Tecnólogo en Desarrollo de Software - Universidad Católica de Pereira
